@@ -3,10 +3,24 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Calulator"
+        xmlns:Controls="clr-namespace:Calulator.UI.Controls"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Height="500" Width="300"
+        AllowsTransparency="True" Background="Transparent"
+        WindowStyle="None" ResizeMode="NoResize">
 
-    </Grid>
+    <Border CornerRadius="15" Background="AliceBlue">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="35"/>
+                <RowDefinition Height="75"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Controls:WindowTitle Title="Calculator"/>
+            <TextBox x:Name="OutPutTextbox" Style="{StaticResource OutputTextBox}" Grid.Row="1"/>
+            <Controls:Keyboard Grid.Row="2" KeyClick="Keyboard_KeyClick"/>
+
+        </Grid>
+    </Border>
 </Window>
