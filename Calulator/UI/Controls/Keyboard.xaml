@@ -1,0 +1,52 @@
+﻿<UserControl x:Class="Calulator.UI.Controls.Keyboard"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="390" d:DesignWidth="300">
+    <UserControl.Resources>
+        <Style TargetType="Button" BasedOn="{StaticResource KeyboardButton}"/>
+    </UserControl.Resources>
+    
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Button Content="%" Click="Button_Click" Grid.Column="0" Grid.Row="0"/>
+        <Button Content="C" Click="Button_Click" Grid.Column="1" Grid.Row="0"/>
+        <Button Content="DEL" Click="Button_Click" Grid.Column="2" Grid.Row="0"/>
+        <Button Content="/" Click="Button_Click" Grid.Column="3" Grid.Row="0"/>
+
+        <Button Content="7" Click="Button_Click" Grid.Column="0" Grid.Row="1"/>
+        <Button Content="8" Click="Button_Click" Grid.Column="1" Grid.Row="1"/>
+        <Button Content="9" Click="Button_Click" Grid.Column="2" Grid.Row="1"/>
+        <Button Content="*" Click="Button_Click" Grid.Column="3" Grid.Row="1"/>
+
+        <Button Content="4" Click="Button_Click" Grid.Column="0" Grid.Row="2"/>
+        <Button Content="5" Click="Button_Click" Grid.Column="1" Grid.Row="2"/>
+        <Button Content="6" Click="Button_Click" Grid.Column="2" Grid.Row="2"/>
+        <Button Content="-" Click="Button_Click" Grid.Column="3" Grid.Row="2"/>
+
+        <Button Content="1" Click="Button_Click" Grid.Column="0" Grid.Row="3"/>
+        <Button Content="2" Click="Button_Click" Grid.Column="1" Grid.Row="3"/>
+        <Button Content="3" Click="Button_Click" Grid.Column="2" Grid.Row="3"/>
+        <Button Content="+" Click="Button_Click" Grid.Column="3" Grid.Row="3"/>
+
+        <Button Content="+/-" Click="Button_Click" Grid.Column="0" Grid.Row="4"/>
+        <Button Content="0" Click="Button_Click" Grid.Column="1" Grid.Row="4"/>
+        <Button Content="," Click="Button_Click" Grid.Column="2" Grid.Row="4"/>
+        <Button Content="=" Click="Button_Click" Grid.Column="3" Grid.Row="4"/>
+    </Grid>
+</UserControl>
