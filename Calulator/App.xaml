@@ -4,6 +4,12 @@
              xmlns:local="clr-namespace:Calulator"
              StartupUri="UI/MainWindow.xaml">
     <Application.Resources>
-         
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="UI/Styles/WindowTitleStyles.xaml"/>
+                <ResourceDictionary Source="UI/Styles/OutputTextBoxStyle.xaml"/>
+                <ResourceDictionary Source="UI/Styles/KeyboardStyles.xaml"/>                
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>
