@@ -7,7 +7,30 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="UI\Controls\Keyboard.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="UI\Controls\WindowTitle.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="UI\Controls\Keyboard.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UI\Controls\WindowTitle.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="UI\MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UI\Styles\KeyboardStyles.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UI\Styles\OutputTextBoxStyle.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UI\Styles\WindowTitleStyles.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
