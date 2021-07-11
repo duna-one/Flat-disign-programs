@@ -70,8 +70,8 @@ namespace Calulator
                     CalcPercent();
                     break;
                 case "=":
-                    if(OutPutTextbox.Text.Length == 0) { return; }
-                    CalcResult();                    
+                    if (OutPutTextbox.Text.Length == 0) { return; }
+                    CalcResult();
                     break;
 
                 default:
