@@ -6,4 +6,9 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="UI\Controls\" />
+    <Folder Include="UI\Styles\" />
+  </ItemGroup>
+
 </Project>
