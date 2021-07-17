@@ -7,8 +7,29 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="UI\Controls\" />
+    <None Remove="UI\Icons\Backword.png" />
+    <None Remove="UI\Icons\Fowrard.png" />
+    <None Remove="UI\Icons\Pause.png" />
+    <None Remove="UI\Icons\Play.png" />
+    <None Remove="UI\Icons\VolumeDown.png" />
+    <None Remove="UI\Icons\VolumeUP.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\UniversalControls\UniversalControls.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="UI\Styles\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="UI\Icons\Backword.png" />
+    <Resource Include="UI\Icons\Fowrard.png" />
+    <Resource Include="UI\Icons\Pause.png" />
+    <Resource Include="UI\Icons\Play.png" />
+    <Resource Include="UI\Icons\VolumeDown.png" />
+    <Resource Include="UI\Icons\VolumeUP.png" />
   </ItemGroup>
 
 </Project>

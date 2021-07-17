@@ -3,7 +3,8 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:VideoPlayer"
+        xmlns:UniversalControls="clr-namespace:Calulator.UI.Controls;assembly=UniversalControls"
+        xmlns:PlayerControls="clr-namespace:VideoPlayer.UI.Controls"
         mc:Ignorable="d"
         WindowStyle="None" 
         AllowsTransparency="True"
@@ -12,9 +13,26 @@
     <Border CornerRadius="20" Background="WhiteSmoke">
         <Grid>
             <Grid.RowDefinitions>
-                <RowDefinition Height="45"/>
+                <RowDefinition Height="40"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
+            <UniversalControls:WindowTitle Title="Video Player"/>
+
+            <Grid Grid.Row="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="25"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <ToolBar>
+                    <ToggleButton Content="File"/>
+                    <ToggleButton Content="Settings"/>
+                    <Button Content="About"/>
+                </ToolBar>
+                
+                <PlayerControls:Player Grid.Row="1"/>
+
+            </Grid>
         </Grid>
     </Border>
 </Window>
