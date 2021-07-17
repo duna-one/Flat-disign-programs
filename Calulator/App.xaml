@@ -6,7 +6,6 @@
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="UI/Styles/WindowTitleStyles.xaml"/>
                 <ResourceDictionary Source="UI/Styles/OutputTextBoxStyle.xaml"/>
                 <ResourceDictionary Source="UI/Styles/KeyboardStyles.xaml"/>                
             </ResourceDictionary.MergedDictionaries>

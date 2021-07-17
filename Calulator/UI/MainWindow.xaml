@@ -1,9 +1,10 @@
-﻿<Window x:Class="Calulator.MainWindow"
+﻿<Window
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:Controls="clr-namespace:Calulator.UI.Controls"
+        xmlns:CalcControls="clr-namespace:Calulator.UI.Controls"
+        xmlns:Universal="clr-namespace:Calulator.UI.Controls;assembly=UniversalControls" x:Class="Calulator.MainWindow"
         mc:Ignorable="d"
         Height="500" Width="300"
         AllowsTransparency="True" Background="Transparent"
@@ -16,10 +17,10 @@
                 <RowDefinition Height="75"/>
                 <RowDefinition/>
             </Grid.RowDefinitions>
-
-            <Controls:WindowTitle Title="Calculator"/>
+            <Universal:WindowTitle Title="Calculator" MaxButtonVisibility="Collapsed" />
             <TextBox x:Name="OutPutTextbox" Style="{StaticResource OutputTextBox}" Grid.Row="1"/>
-            <Controls:Keyboard Grid.Row="2" KeyClick="Keyboard_KeyClick"/>
+            <CalcControls:Keyboard Grid.Row="2" KeyClick="Keyboard_KeyClick"/>
+
 
         </Grid>
     </Border>
